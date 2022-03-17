@@ -1,9 +1,9 @@
 cli:
-  auth_pass: linuxadmin
+  auth_pass: admin
   authorize: true
   host: '{{ ansible_host }}'
-  password: linuxadmin
-  username: linuxadmin
+  password: admin
+  username: admin
 hostname: VxRail-fabric-LEAF-4
 os10_bgp:
   asn: 64626
@@ -23,7 +23,7 @@ os10_bgp:
     admin: up
     adv_interval: 1
     fall_over: present
-    ip: 192.168.1.6
+    ip: 192.164.1.6
     name: spine-leaf
     peergroup: spine-leaf
     remote_asn: 64600
@@ -35,14 +35,14 @@ os10_bgp:
     admin: up
     adv_interval: 1
     fall_over: present
-    ip: 192.168.2.6
+    ip: 192.164.2.6
     name: spine-leaf
     peergroup: spine-leaf
     remote_asn: 64600
     timer: 3 9
     type: ipv4
   - admin: up
-    ip: 192.168.3.2
+    ip: 192.164.3.2
     remote_asn: 64626
     type: ipv4
   - address_family:
@@ -211,13 +211,13 @@ os10_interface:
   ethernet 1/1/55:
     admin: up
     desc: Uplink to VxRail-fabric-SPINE-2 1/1/4
-    ip_and_mask: 192.168.2.7/31
+    ip_and_mask: 192.164.2.7/31
     mtu: 9216
     switchport: false
   ethernet 1/1/56:
     admin: up
     desc: Uplink to VxRail-fabric-SPINE-1 1/1/4
-    ip_and_mask: 192.168.1.7/31
+    ip_and_mask: 192.164.1.7/31
     mtu: 9216
     switchport: false
   ethernet 1/1/6:
@@ -284,7 +284,7 @@ os10_prefix_list:
     - condition: ge
       prelen: '24'
     mask: '16'
-    net_num: 192.168.0.0
+    net_num: 192.164.0.0
     number: 30
     permit: true
     state: present
@@ -387,7 +387,7 @@ os10_vlan:
       state: present
   Vlan 4000:
     description: iBGP_link
-    ip_and_mask: 192.168.3.3/31
+    ip_and_mask: 192.164.3.3/31
     state: present
 os10_vlt:
   discovery_intf: 1/1/47-1/1/48
