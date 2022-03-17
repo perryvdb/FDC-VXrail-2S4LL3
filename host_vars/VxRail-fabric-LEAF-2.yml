@@ -3,6 +3,7 @@ cli:
   authorize: true
   host: '{{ ansible_host }}'
   password: admin
+  username: admin
 hostname: VxRail-fabric-LEAF-2
 os10_bgp:
   asn: 64625
