@@ -208,18 +208,18 @@ os10_interface:
     admin: up
   ethernet 1/1/54:
     admin: up
-  ethernet 1/1/55:
-    admin: up
     desc: Uplink to VxRail-fabric-SPINE-2 1/1/1
     ip_and_mask: 192.164.2.1/31
     mtu: 9216
     switchport: false
-  ethernet 1/1/56:
-    admin: up
     desc: Uplink to VxRail-fabric-SPINE-1 1/1/1
     ip_and_mask: 192.164.1.1/31
     mtu: 9216
     switchport: false
+  ethernet 1/1/55:
+    admin: up
+  ethernet 1/1/56:
+    admin: up
   ethernet 1/1/6:
     admin: up
     desc: Node-02_vmnic1-NDC1-25G-2
