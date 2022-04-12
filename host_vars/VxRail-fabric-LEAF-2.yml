@@ -217,10 +217,6 @@ os10_interface:
     switchport: false
   ethernet 1/1/55:
     admin: up
-    desc: Uplink to VxRail-fabric-SPINE-2 1/1/2
-    ip_and_mask: 192.164.2.3/31
-    mtu: 9216
-    switchport: false
   ethernet 1/1/56:
     admin: up
   ethernet 1/1/6:
