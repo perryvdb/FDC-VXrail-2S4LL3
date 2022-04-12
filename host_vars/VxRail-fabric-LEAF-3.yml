@@ -219,7 +219,6 @@ os10_interface:
     admin: up
   ethernet 1/1/56:
     admin: up
-    switchport: false
   ethernet 1/1/6:
     admin: up
     desc: Node-06_vmnic1-NDC1-25G-2
